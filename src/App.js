@@ -8,7 +8,7 @@ import Contact from './pages/Contact.jsx';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
             <Route exact path="/" component={Home}/>
             <Route exact path="/about" component={About}/>
