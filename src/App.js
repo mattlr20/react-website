@@ -8,11 +8,11 @@ import Contact from './pages/Contact.jsx';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
-            <Route exact path={process.env.PUBLIC_URL + '/about'} component={About}/>
-            <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact}/>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/contact" component={Contact}/>
         </div>
       </Router>
     );
