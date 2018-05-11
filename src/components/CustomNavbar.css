@@ -14,6 +14,7 @@ nav.navbar, .navbar-default {
   
   .navbar-default .navbar-brand {
     color: white;
+    display: block;
   }
   
   .navbar-default .navbar-toggle {
@@ -36,4 +37,10 @@ nav.navbar, .navbar-default {
   .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: white;
     background-color: transparent;
+  }
+
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 500px 40px 40px 40px;
+    background: url('../images/couple-1.jpeg') center;
   }
