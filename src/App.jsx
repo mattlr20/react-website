@@ -12,16 +12,16 @@ class App extends Component {
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
           <div>
             <Navbar />
+        <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/Weddings" component={Weddings} />
             <Route path="/portraits" component={Portraits} />
-          </div>
         </Switch>
+          </div>
       </Router>
     );
   }
