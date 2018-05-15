@@ -41,7 +41,7 @@ body{
 .gal-item a.gal-link:focus{
 	outline: none;
 }
-.gal-item a.gal-link:nth-child(0):after{
+.gal-item a.gal-link:after{
 	content:"\e003";
 	font-family: 'Glyphicons Halflings';
 	opacity: 0;
