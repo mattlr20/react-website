@@ -38,10 +38,10 @@ body{
 	object-fit:cover;
 	-o-object-fit:cover;
 }
-.gal-item a:focus{
+.gal-item a.gal-link:focus{
 	outline: none;
 }
-.gal-item a:after{
+.gal-item a.gal-link:nth-child(0):after{
 	content:"\e003";
 	font-family: 'Glyphicons Halflings';
 	opacity: 0;

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './Contact.css';
 
 export default class Contact extends Component {
   render() {
     return (
       <div>
-        <Image src="assets/mountain-man.jpg" className="header-image" />
         <Grid>
           <h2>Contact</h2>
           <Row>
@@ -18,7 +17,6 @@ export default class Contact extends Component {
               <p>Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things Let's make some happy little clouds in our world. This is a happy place, little squirrels live here and play. We'll do another happy little painting. A fan brush is a fantastic piece of equipment. Use it. Make friends with it. We might as well make some Almighty mountains today as well, what the heck.</p>
             </Col>
             <Col xs={12} sm={4} className="sidebar-section">
-              <Image src="assets/dog-people.jpg" />
               <p>I spend a lot of time walking around in the woods and talking to trees, and squirrels, and little rabbits and stuff. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. Just go out and talk to a tree. Make friends with it. I guess that would be considered a UFO. A big cotton ball in the sky. Tree trunks grow however makes them happy. In nature, dead trees are just as normal as live trees.</p>
             </Col>
           </Row>
