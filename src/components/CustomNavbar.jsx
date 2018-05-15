@@ -7,13 +7,17 @@ export default class CustomNavbar extends Component {
   render() {
     return (
       <div>
-      <PageHeader bsClass="text-center">Ko-Ann's Photography</PageHeader>
+      <PageHeader bsClass="text-center lg-brand">
+        <Link to="/">
+          Ko-Ann's Photography
+        </Link>
+      </PageHeader>
       <Navbar default collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            {/* <Link to="/">
-                KoAnn Photography
-            </Link> */}
+            <Link to="/">
+              Ko-Ann's Photography
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

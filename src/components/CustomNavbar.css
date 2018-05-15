@@ -66,3 +66,16 @@ nav.navbar,
   padding: 10px;
   vertical-align: bottom;
 }
+
+.lg-brand {
+  display: none;
+}
+
+@media(min-width:768px) {
+  .lg-brand {
+    display: block;
+  }
+  .navbar-default .navbar-brand {
+    display: none;
+  }
+}
