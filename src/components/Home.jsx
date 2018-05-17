@@ -32,56 +32,60 @@ const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
 export default class Home extends Component {
   render() {
     return (
-      <Grid>
+      <div>
+        <Grid>
         <Row className="link-boxes">
-          <Col xs={12} sm={4} >
-            <div className="link-box">
-              <Link to="/about">Information</Link>
-              <p className="widget-delimiter"></p>
-              <p>Investment &amp; Details</p>
-            </div>
-          </Col>
-          <Col xs={12} sm={4}>
-            <div className="link-box">
-              <Link to="/about">Contact Me</Link>
-              <p className="widget-delimiter"></p>
-              <p>Get in Touch</p>
-            </div>
-          </Col>
-          <Col xs={12} sm={4} >
-            <div className="link-box">
-              Follow Me
-              <p className="widget-delimiter"></p>
-              <div className="social">
-                <Link to="www.facebook.com">
-                  <FontAwesome.FaFacebook />
-                </Link>
-                <Link to="www.instagram.com">
-                  <FontAwesome.FaInstagram />
-                </Link>
-                <Link to="www.pinterest.com">
-                  <FontAwesome.FaPinterest />
-                </Link>
+            <Col xs={12} sm={4} >
+              <div className="link-box">
+                <Link to="/about">Information</Link>
+                <p className="widget-delimiter"></p>
+                <p>Investment &amp; Details</p>
               </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          {gallery}
-        </Row>
-        <Row>
-          <Col>
-          <div className="home-about">
-            <div className="content">
-              <p>Hello I'm Ko-Ann</p>
-              <p>I love to capture the emotions we all go through as people, particularly, those in love.</p>
-              <p>Let me help you share your one-of-a-kind love story.</p>
-              <p>Based in Hollister, NC. Available in Halifax, Warren, and Nash County areas.</p>
-            </div>
-          </div>
-          </Col>
-        </Row>
-      </Grid>
+            </Col>
+            <Col xs={12} sm={4}>
+              <div className="link-box">
+                <Link to="/about">Contact Me</Link>
+                <p className="widget-delimiter"></p>
+                <p>Get in Touch</p>
+              </div>
+            </Col>
+            <Col xs={12} sm={4} >
+              <div className="link-box">
+                Follow Me
+                <p className="widget-delimiter"></p>
+                <div className="social">
+                  <Link to="www.facebook.com">
+                    <FontAwesome.FaFacebook />
+                  </Link>
+                  <Link to="www.instagram.com">
+                    <FontAwesome.FaInstagram />
+                  </Link>
+                  <Link to="www.pinterest.com">
+                    <FontAwesome.FaPinterest />
+                  </Link>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+        <Grid className="gal-container">
+          <Row className="gal-row">
+            {gallery}
+          </Row>
+        </Grid>
+        <Grid fluid>
+          <Row className="home-about-wrap">
+            <Col xs={12} className="home-about">
+              <Col className="content" md={4} mdOffset={4}>
+                <p>Hello I'm Ko-Ann</p>
+                <p>I love to capture the emotions we all go through as people, particularly, those in love.</p>
+                <p>Let me help you share your one-of-a-kind love story.</p>
+                <p>Based in Hollister, NC. Available in Halifax, Warren, and Nash County areas.</p>
+              </Col>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     );
   }
 }

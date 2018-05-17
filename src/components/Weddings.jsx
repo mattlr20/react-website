@@ -29,7 +29,18 @@ const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
    });
 
 export default class Weddings extends Component {
+  constructor(props) {
+    super(props);
+    this.hideActiveModal = this.hideActiveModal.bind(this);
+  }
+  
+  hideActiveModal = () => {
+    const modal = document.getElementsByClassName('modal-backdrop fade in')[0];
+    if (modal != null)
+     modal.className =''; 
+  };
   render() {
+    this.hideActiveModal();
     return (
       <Grid>
         <Row>
