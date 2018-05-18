@@ -1,6 +1,7 @@
 nav.navbar,
 .navbar-default {
-  background-color: #2892D7 !important;
+  background-color: inherit !important;
+  padding: 15px 0;
 }
 
 .navbar-default {
@@ -17,14 +18,29 @@ nav.navbar,
 .navbar-nav li {
   float: none;
   display: inline-block;
+  vertical-align: top;
+}
+
+.navbar-default .navbar-nav li a > .menu-description {
+  font-size: 12px;
+}
+
+.navbar-default .navbar-nav>li:not(:last-child) {
+  margin-right: 138px;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: white;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li:first-of-type > a,
+.navbar-default .navbar-nav>li:last-of-type > a {
+  padding-right: 0px;
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  color: inherit;
   display: block;
 }
 

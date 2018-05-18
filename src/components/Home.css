@@ -218,6 +218,7 @@
   .social a {
       padding-left: 5px;
       padding-right: 5px;
+      color: inherit;
   }
 
   .home-about-wrap {
