@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, PageHeader } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, PageHeader, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css'
 
@@ -9,7 +9,7 @@ export default class CustomNavbar extends Component {
       <div>
       <PageHeader bsClass="text-center lg-brand">
         <Link to="/">
-          Ko-Ann's Photography
+          <Image src="assets/logo.png" />
         </Link>
       </PageHeader>
       <Navbar default collapseOnSelect>
