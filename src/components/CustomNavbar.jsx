@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem, PageHeader, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -31,13 +32,9 @@ export default class CustomNavbar extends Component {
               About KoAnn
               {/* <div className="menu-description">Learn more</div> */}
             </NavItem>
-            <NavItem eventKey={3} componentClass={Link} href="/weddings" to="/weddings">
-              Weddings
+            <NavItem eventKey={3} componentClass={Link} href="/contact" to="/contact">
+              Contact
               {/* <div className="menu-description">Wedding Photo Gallery</div> */}
-            </NavItem>
-            <NavItem eventKey={4} componentClass={Link} href="/portraits" to="/portraits">
-              Portraits
-              {/* <div className="menu-description">Portrait Photo Gallery</div> */}
             </NavItem>
           </Nav>
         </Navbar.Collapse>

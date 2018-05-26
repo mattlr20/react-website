@@ -139,11 +139,7 @@ line-height: 20px;
   margin: 50 auto;
 }
 }
-@media (max-width: 768px) {
-  .gal-container .modal-content{
-      height:250px;
-  }
-}
+
 /* Footer Style */
 i.red{
   color:#BC0213;

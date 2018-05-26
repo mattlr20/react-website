@@ -1,4 +1,19 @@
 .sidebar-section img {
-    width: 100%;
-    margin-bottom: 2em;
-  }
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.contact-profile-pic {
+  float: left;
+  margin: 0 1em 1em 0;
+  width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p:nth-of-type(1) {
+  font-weight: bold;
+}
