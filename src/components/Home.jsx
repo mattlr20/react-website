@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import { Grid, Image, Row, Col, Modal } from 'react-bootstrap';
+import { Grid, Image, Row, Col, Modal, Carousel } from 'react-bootstrap';
 import * as FontAwesome from 'react-icons/lib/fa'
 import './Home.css';
 
@@ -18,9 +18,9 @@ const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
                 <Modal.Body>
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                   <Image src={`assets/home/${img}.jpg`} />
-                  <div md={12} className="description">
+                  {/* <div md={12} className="description">
                     <h4><Link state={{ modal: true, returnTo: '/weddings' }} href="/weddings" to="/weddings">Wedding Photos</Link></h4>
-                  </div>
+                  </div> */}
                 </Modal.Body>
             </Modal.Dialog>
           </div>
@@ -33,8 +33,21 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <Grid fluid>
+          <Carousel>
+            <Carousel.Item>
+              <img alt="900x500" src="assets/home/wedding-4.jpg" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img alt="900x500" src="assets/home/wedding-10.jpg" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img alt="900x500" src="assets/home/wedding-7.jpg" />
+            </Carousel.Item>
+          </Carousel>
+        </Grid>
         <Grid>
-        <Row className="link-boxes">
+          <Row className="link-boxes">
             <Col xs={12} sm={4} >
               <div className="link-box">
                 <Link to="/about">Information</Link>
@@ -74,7 +87,7 @@ export default class Home extends Component {
           </Row>
         </Grid>
         <Grid fluid>
-          <Row className="home-about-wrap">
+          <div className="home-about-wrap">
             <Col xs={12} className="home-about">
               <Col className="content" md={4} mdOffset={4}>
                 <p>Hello I'm Ko-Ann</p>
@@ -83,7 +96,7 @@ export default class Home extends Component {
                 <p>Based in Hollister, NC. Available in Halifax, Warren, and Nash County areas.</p>
               </Col>
             </Col>
-          </Row>
+          </div>
         </Grid>
       </div>
     );

@@ -1,7 +1,7 @@
 nav.navbar,
 .navbar-default {
   background-color: inherit !important;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .navbar-default {
@@ -13,6 +13,10 @@ nav.navbar,
 .navbar-nav {
   float: none;
   text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0px;
 }
 
 .navbar-header {
@@ -119,7 +123,7 @@ nav.navbar,
 }
 
 .lg-brand img {
-  max-width: 300px;
+  max-width: 215px;
   height: auto;
 }
 
