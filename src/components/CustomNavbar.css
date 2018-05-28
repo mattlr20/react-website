@@ -56,6 +56,11 @@ nav.navbar,
   padding-right: 0px;
 }
 
+.navbar-default .navbar-nav>li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media(max-width:768px) {
   .navbar-default .navbar-nav>li:first-of-type>a {
     padding-left: 15px;

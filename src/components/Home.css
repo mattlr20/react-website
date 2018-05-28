@@ -200,6 +200,12 @@
       color: #000000;
   }
 
+
+  .carousel-inner img {
+    height: auto;
+    width: 100%;
+}
+  
   .carousel-indicators,.carousel-control {
       display: none;
   }

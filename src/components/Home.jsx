@@ -34,15 +34,15 @@ export default class Home extends Component {
     return (
       <div>
         <Grid fluid>
-          <Carousel>
+          <Carousel className="home-carousel">
             <Carousel.Item>
-              <img alt="900x500" src="assets/home/wedding-4.jpg" />
+              <img alt="carousel-1" src="assets/home/wedding-4.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="900x500" src="assets/home/wedding-10.jpg" />
+              <img alt="carousel-2" src="assets/home/wedding-10.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="900x500" src="assets/home/wedding-7.jpg" />
+              <img alt="carousel-3" src="assets/home/wedding-7.jpg" />
             </Carousel.Item>
           </Carousel>
         </Grid>
@@ -67,15 +67,15 @@ export default class Home extends Component {
                 Follow Me
                 <p className="widget-delimiter"></p>
                 <div className="social">
-                  <Link to="www.facebook.com">
+                  <a href="https://www.facebook.com/Ko-Anns-Photography-1683555588593159/" target="_blank" rel="noopener noreferrer">
                     <FontAwesome.FaFacebook />
-                  </Link>
-                  <Link to="www.instagram.com">
+                  </a>
+                  <a href="https://www.instagram.com/koann12/" target="_blank" rel="noopener noreferrer">
                     <FontAwesome.FaInstagram />
-                  </Link>
-                  <Link to="www.pinterest.com">
+                  </a>
+                  <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesome.FaPinterest />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </Col>
