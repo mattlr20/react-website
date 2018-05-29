@@ -17,3 +17,7 @@
 .contact-info p:nth-of-type(1) {
   font-weight: bold;
 }
+
+.form-control, .btn {
+  border-radius: 0;
+}

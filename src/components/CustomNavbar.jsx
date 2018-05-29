@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, PageHeader, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css'
 
@@ -8,16 +8,11 @@ export default class CustomNavbar extends Component {
   render() {
     return (
       <div>
-      <PageHeader bsClass="text-center lg-brand">
-        <Link to="/">
-          <Image src="assets/logo.png" />
-        </Link>
-      </PageHeader>
-      <Navbar default collapseOnSelect>
+      <Navbar default collapseOnSelect fixedTop={true}>
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
-              Ko-Ann's Photography
+              <Image src="assets/logo.png" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />

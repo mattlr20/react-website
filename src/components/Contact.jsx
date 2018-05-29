@@ -15,13 +15,14 @@ export default class Contact extends Component {
             </div>
           </Col>
         <Col xs={12} sm={6}>
-          <form>
+          <form action="https://formspree.io/richardson.webdev@gmail.com" method="POST">
             <FormGroup
               controlId="email">
               <ControlLabel>Email</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                placeholder="your@email.com"
+                name="_replyto" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -29,7 +30,8 @@ export default class Contact extends Component {
               <ControlLabel>Full name</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                placeholder="Jane Doe"
+                name="name" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -37,7 +39,8 @@ export default class Contact extends Component {
               <ControlLabel>Your Phone Number</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="phone"
+                placeholder="123 456 7890" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -45,7 +48,8 @@ export default class Contact extends Component {
               <ControlLabel>Event Date</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="eventdate"
+                placeholder="MM/DD/YYYY" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -53,7 +57,8 @@ export default class Contact extends Component {
               <ControlLabel>Locaction</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="location"
+                placeholder="Hollister, NC" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -61,7 +66,7 @@ export default class Contact extends Component {
               <ControlLabel>Estimated Guest Count</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="guestcount" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -69,7 +74,8 @@ export default class Contact extends Component {
               <ControlLabel>Estimated Budget</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="budget"
+                placeholder="$1000" />
               <FormControl.Feedback />
             </FormGroup>
             <FormGroup
@@ -77,10 +83,10 @@ export default class Contact extends Component {
               <ControlLabel>Tell me about your event</ControlLabel>
               <FormControl
                 type="text"
-                placeholder="Enter text" />
+                name="description" />
               <FormControl.Feedback />
             </FormGroup>
-            <Button>Send</Button>
+            <Button type="submit">Send</Button>
           </form>
         </Col>
       </Grid>

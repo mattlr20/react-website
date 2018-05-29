@@ -1,7 +1,7 @@
 nav.navbar,
 .navbar-default {
-  background-color: inherit !important;
   padding: 5px 0;
+  background-color: white;
 }
 
 .navbar-default {
@@ -19,14 +19,23 @@ nav.navbar,
   margin-bottom: 0px;
 }
 
-.navbar-header {
+.container .navbar-header {
   text-align: center;
+  margin: 0;
+  padding: 5px 15px;
+  width: 100%;
 }
 
 .navbar-nav li {
   float: none;
   display: inline-block;
   vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    padding-top: 70px;
+  }
 }
 
 .navbar-default .navbar-nav li a>.menu-description {
@@ -83,12 +92,15 @@ nav.navbar,
 }
 
 .navbar-default .navbar-toggle {
-  border-color: white;
+  border: none;
   margin-right: 0;
+  margin-top: 21px;
+  float: none;
+  padding: 10px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #000000;
 }
 
 .navbar-default .navbar-toggle:focus,
@@ -122,24 +134,11 @@ nav.navbar,
   vertical-align: bottom;
 }
 
-.lg-brand {
-  display: block;
-  text-align: center;
-}
-
-.lg-brand img {
-  max-width: 215px;
-  height: auto;
-}
-
-.navbar-default .navbar-brand {
-  display: none;
-}
-
-.navbar-default .navbar-toggle {
+.navbar-brand {
   float: none;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #000000;
+.navbar-default .navbar-brand img {
+  max-width: 215px;
+  display: inline-block;
 }

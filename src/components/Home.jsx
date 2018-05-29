@@ -50,21 +50,21 @@ export default class Home extends Component {
           <Row className="link-boxes">
             <Col xs={12} sm={4} >
               <div className="link-box">
-                <Link to="/about">Information</Link>
+                <Link to="/about" className="title">Information</Link>
                 <p className="widget-delimiter"></p>
                 <p>Investment &amp; Details</p>
               </div>
             </Col>
             <Col xs={12} sm={4}>
               <div className="link-box">
-                <Link to="/about">Contact Me</Link>
+                <Link to="/about" className="title">Contact Me</Link>
                 <p className="widget-delimiter"></p>
                 <p>Get in Touch</p>
               </div>
             </Col>
             <Col xs={12} sm={4} >
               <div className="link-box">
-                Follow Me
+                <p className="title">Follow Me</p>
                 <p className="widget-delimiter"></p>
                 <div className="social">
                   <a href="https://www.facebook.com/Ko-Anns-Photography-1683555588593159/" target="_blank" rel="noopener noreferrer">
