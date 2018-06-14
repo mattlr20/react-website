@@ -1,13 +1,13 @@
 
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
+import { Grid, Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './CustomNavbar.css'
 
 export default class CustomNavbar extends Component {
   render() {
     return (
-      <div>
+      <Grid>
       <Navbar default collapseOnSelect fixedTop={true}>
         <Navbar.Header>
           <Navbar.Brand>
@@ -34,7 +34,7 @@ export default class CustomNavbar extends Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      </div>
+      </Grid>
     )
   }
 }

@@ -33,18 +33,20 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Grid fluid>
+        <Grid>
+          <hr/>
           <Carousel className="home-carousel">
             <Carousel.Item>
-              <img alt="carousel-1" src="assets/home/wedding-4.jpg" />
+              <img alt="carousel-1" src="assets/home/newborn.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="carousel-2" src="assets/home/wedding-10.jpg" />
+              <img alt="carousel-2" src="assets/home/musician.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="carousel-3" src="assets/home/wedding-7.jpg" />
+              <img alt="carousel-3" src="assets/home/senior.jpg" />
             </Carousel.Item>
           </Carousel>
+          <hr/>
         </Grid>
         <Grid>
           <Row className="link-boxes">
@@ -86,7 +88,7 @@ export default class Home extends Component {
             {gallery}
           </Row>
         </Grid>
-        <Grid fluid>
+        <Grid>
           <div className="home-about-wrap">
             <Col xs={12} className="home-about">
               <Col className="content" md={4} mdOffset={4}>
