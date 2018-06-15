@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://mattlr20.github.io/react-website/",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",

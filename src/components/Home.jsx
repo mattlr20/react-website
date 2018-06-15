@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Grid, Image, Row, Col, Modal, Carousel } from 'react-bootstrap';
-import * as FontAwesome from 'react-icons/lib/fa'
+// import * as FontAwesome from 'react-icons/lib/fa'
 import './Home.css';
 
 const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
@@ -48,7 +48,7 @@ export default class Home extends Component {
           </Carousel>
           <hr/>
         </Grid>
-        <Grid>
+        {/* <Grid>
           <Row className="link-boxes">
             <Col xs={12} sm={4} >
               <div className="link-box">
@@ -82,7 +82,8 @@ export default class Home extends Component {
               </div>
             </Col>
           </Row>
-        </Grid>
+          <hr/>
+        </Grid> */}
         <Grid className="gal-container">
           <Row className="gal-row">
             {gallery}

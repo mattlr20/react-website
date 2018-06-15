@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import 'babel-polyfill';
 
 import Home from './components/Home';
 import About from './components/About';
