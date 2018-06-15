@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 // import { Grid, Col, Image } from 'react-bootstrap';
-import './About.css';
+// import './About.css';
 
 export default class About extends Component {
   render() {
     return (
       <div>
+        <h1>About</h1>
         {/* <Grid>
           <Col xs={12} sm={7}>
             <h3>About</h3>
