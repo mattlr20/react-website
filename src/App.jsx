@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import 'babel-polyfill';
 
 import HomeTest from './components/HomeTest';
@@ -16,11 +16,9 @@ class App extends Component {
       <Router basename={process.env.PUBLIC_URL}>
       <div>
           <Navbar />
-          <Switch>
             <Route exact path="/" component={HomeTest} />
             <Route path="/about" component={About} />
             {/* <Route exact path="/contact" render={(props) => (<Contact />)} /> */}
-          </Switch>
           <Footer />
         </div>
       </Router>
