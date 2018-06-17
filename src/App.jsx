@@ -9,8 +9,6 @@ import Navbar from './components/CustomNavbar';
 import Footer from './components/footer';
 
 class App extends Component {
-  
-
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL}>
@@ -18,7 +16,7 @@ class App extends Component {
           <Navbar />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/about" component={Contact} />
+            <Route path="/contact" component={Contact} />
           <Footer />
         </div>
       </Router>

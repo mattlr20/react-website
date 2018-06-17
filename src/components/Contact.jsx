@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-// import { Grid, Col, Button, Image, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
-// import './Contact.css';
+import { Grid, Col, Button, Image, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import './Contact.css';
 
 export default class Contact extends Component {
   render() {
     return (
       <div>
-        {/* <Grid>
+        <Grid>
           <h3>Contact</h3>
             <Col xs={12} sm={6}>
               <Image src="assets/koann-1.jpg" className="contact-profile-pic" />
@@ -90,7 +90,7 @@ export default class Contact extends Component {
               <Button type="submit">Send</Button>
             </form>
           </Col>
-        </Grid> */}
+        </Grid>
       </div>
     )
   }

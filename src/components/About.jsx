@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-// import { Grid, Col, Image } from 'react-bootstrap';
-// import './About.css';
+import { Grid, Col, Image } from 'react-bootstrap';
+import './About.css';
 
 export default class About extends Component {
   render() {
     return (
       <div>
         <h1>About</h1>
-        {/* <Grid>
+        <Grid>
           <Col xs={12} sm={7}>
             <h3>About</h3>
             <p>Hello there. My name is Ko-Ann, and thanks for stopping by!</p>
@@ -24,7 +24,7 @@ export default class About extends Component {
           <Col xs={12} sm={5}>
             <Image src="assets/koann-1.jpg" className="about-profile-pic" />
           </Col>
-        </Grid> */}
+        </Grid>
       </div>
     )
   }
