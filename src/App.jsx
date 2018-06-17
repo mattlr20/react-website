@@ -5,8 +5,8 @@ import 'babel-polyfill';
 import HomeTest from './components/HomeTest';
 import About from './components/About';
 // import Contact from './components/Contact';
-import Navbar from './components/CustomNavbar';
-import Footer from './components/footer';
+// import Navbar from './components/CustomNavbar';
+// import Footer from './components/footer';
 
 class App extends Component {
   
@@ -15,11 +15,11 @@ class App extends Component {
     return (
       <Router basename={process.env.PUBLIC_URL}>
       <div>
-          <Navbar />
+          {/* <Navbar /> */}
             <Route exact path="/" component={HomeTest} />
             <Route path="/about" component={About} />
             {/* <Route exact path="/contact" render={(props) => (<Contact />)} /> */}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     );
