@@ -13,12 +13,15 @@ class App extends Component {
 
   render() {
     return (
-      <Router {...props}>
-      <Route path="/" component={App}>
-        <IndexRoute component={HomeTest} />
-        <Route path="/about" component={About} />
-      </Route>
-    </Router>
+      <Router basename={process.env.PUBLIC_URL}>
+      <div>
+          {/* <Navbar /> */}
+            <Route exact path="/" component={HomeTest} />
+            <Route path="/about" component={About} />
+            {/* <Route exact path="/contact" render={(props) => (<Contact />)} /> */}
+          {/* <Footer /> */}
+        </div>
+      </Router>
     );
   }
 }
