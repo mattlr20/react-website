@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Router, IndexRoute, Route } from 'react-router';
 import 'babel-polyfill';
 
 import HomeTest from './components/HomeTest';
@@ -13,15 +13,12 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
-      <div>
-          {/* <Navbar /> */}
-            <Route exact path="/" component={HomeTest} />
-            <Route path="/about" component={About} />
-            {/* <Route exact path="/contact" render={(props) => (<Contact />)} /> */}
-          {/* <Footer /> */}
-        </div>
-      </Router>
+      <Router {...props}>
+      <Route path="/" component={App}>
+        <IndexRoute component={HomeTest} />
+        <Route path="/about" component={About} />
+      </Route>
+    </Router>
     );
   }
 }
