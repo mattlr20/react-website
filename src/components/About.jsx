@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { Grid, Col, Image } from 'react-bootstrap';
+import {Helmet} from "react-helmet";
 import './About.css';
 
 export default class About extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>KoAnn Photography | About</title>
+            <meta name="description" content="About KoAnn Photography" />
+        </Helmet>
         <h1>About</h1>
         <Grid>
           <Col xs={12} sm={7}>

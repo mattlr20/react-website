@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { Grid, Col, Button, Image, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import './Contact.css';
+import {Helmet} from "react-helmet";
 
 export default class Contact extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>KoAnn Photography | Contact</title>
+            <meta name="description" content="Contact KoAnn Photography" />
+        </Helmet>
         <Grid>
           <h3>Contact</h3>
             <Col xs={12} sm={6}>

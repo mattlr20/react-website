@@ -1,38 +1,44 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import { Grid, Row, Col, Image, Modal, Carousel } from 'react-bootstrap';
+//import { Link } from 'react-router-dom';
+import { Grid, Col, Carousel } from 'react-bootstrap';
 // import * as FontAwesome from 'react-icons/lib/fa'
+import {Helmet} from "react-helmet";
 import './Home.css';
 
-const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
-  'wedding-5','wedding-6','wedding-7','wedding-8','wedding-9','wedding-10','wedding-11','wedding-12']
-   const gallery = images.map( (img,index) => {
-    return (
-      <Col key={index} xs={12} sm={4} md={3} className="gal-item">
-        <div className="box">
-          <Link to="#" className="gal-link" data-toggle="modal" data-target={`#${index}`}>
-          <Image src={`assets/home/${img}.jpg`} />
-          </Link>
-          <div className="modal fade" id={index} tabIndex="-1" role="dialog">
-            <Modal.Dialog>
-                <Modal.Body>
-                  <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                  <Image src={`assets/home/${img}.jpg`} />
-                  {/* <div md={12} className="description">
-                    <h4><Link state={{ modal: true, returnTo: '/weddings' }} href="/weddings" to="/weddings">Wedding Photos</Link></h4>
-                  </div> */}
-                </Modal.Body>
-            </Modal.Dialog>
-          </div>
-        </div>
-      </Col>
-    )
-   });
+// const images = ['wedding-1','wedding-2','wedding-3','wedding-4',
+//   'wedding-5','wedding-6','wedding-7','wedding-8','wedding-9','wedding-10','wedding-11','wedding-12']
+//    const gallery = images.map( (img,index) => {
+//     return (
+//       <Col key={index} xs={12} sm={4} md={3} className="gal-item">
+//         <div className="box">
+//           <Link to="#" className="gal-link" data-toggle="modal" data-target={`#${index}`}>
+//           <Image src={`assets/home/${img}.jpg`} />
+//           </Link>
+//           <div className="modal fade" id={index} tabIndex="-1" role="dialog">
+//             <Modal.Dialog>
+//                 <Modal.Body>
+//                   <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+//                   <Image src={`assets/home/${img}.jpg`} />
+//                   {/* <div md={12} className="description">
+//                     <h4><Link state={{ modal: true, returnTo: '/weddings' }} href="/weddings" to="/weddings">Wedding Photos</Link></h4>
+//                   </div> */}
+//                 </Modal.Body>
+//             </Modal.Dialog>
+//           </div>
+//         </div>
+//       </Col>
+//     )
+//    });
 
 export default class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>KoAnn Photography | Hollister, NC | Portraits, Weddings, Newborns, Engagements, &amp; Seniors</title>
+            <meta name="description" content="KoAnn Photography" />
+        </Helmet>
         <Grid>
           <hr/>
           <Carousel className="home-carousel">
@@ -84,11 +90,11 @@ export default class Home extends Component {
           </Row>
           <hr/>
         </Grid> */}
-        <Grid className="gal-container">
+        {/* <Grid className="gal-container">
           <Row className="gal-row">
             {gallery}
           </Row>
-        </Grid>
+        </Grid> */}
         <Grid>
           <div className="home-about-wrap">
             <Col xs={12} className="home-about">
