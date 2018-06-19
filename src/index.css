@@ -6,6 +6,12 @@ body {
   font-size: 13px;
 }
 
+@media(max-width:767px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
   text-transform: uppercase;
