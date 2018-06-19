@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/CustomNavbar';
-import Footer from './components/Footer';
+import Footer from './components/Foot';
 //import Gallery from './components/Gallery';
 
 class App extends Component {
