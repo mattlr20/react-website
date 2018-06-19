@@ -9,11 +9,11 @@ export default class Contact extends Component {
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>KoAnn Photography | Contact</title>
-            <meta name="description" content="Contact KoAnn Photography" />
+            <title>Contact - Hollister, NC Portraits &amp; Weddings Photography | KoAnn Photography</title>
+            <meta name="description" content="Need a wedding or portrait photographer in Hollister, NC, Halifax, Warren, or Nash County? Schedule an appointment with KoAnn today!" />
         </Helmet>
         <Grid>
-          <h3>Contact</h3>
+          <h1>Contact</h1>
             <Col xs={12} sm={6}>
               <Image src="assets/koann-1.jpg" className="contact-profile-pic" />
               <div className="contact-info">

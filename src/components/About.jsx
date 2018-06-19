@@ -9,13 +9,12 @@ export default class About extends Component {
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>KoAnn Photography | About</title>
-            <meta name="description" content="About KoAnn Photography" />
+            <title>About - Hollister, NC Portraits &amp; Weddings Photography | KoAnn Photography</title>
+            <meta name="description" content="Hello there. My name is Ko-Ann, and thanks for stopping by! I do wedding photography in Hollister, NC, Halifax County, Warren County, and Nash County." />
         </Helmet>
-        <h1>About</h1>
         <Grid>
           <Col xs={12} sm={7}>
-            <h3>About</h3>
+            <h1>About Me</h1>
             <p>Hello there. My name is Ko-Ann, and thanks for stopping by!</p>
             <p>I live in Hollister, NC. I love to capture the emotions we all go through as people, particularly, those in love.</p>
             <p>My personal mission for each and every one of my clients is to create a time capsule of images for you and your loved 
