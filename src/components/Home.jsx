@@ -13,8 +13,7 @@ export default class Home extends Component {
             <title>Hollister, NC Portraits &amp; Weddings Photography | KoAnn Photography</title>
             <meta name="description" content="Wedding and Portrait Photography in Hollister, NC, Halifax County and Nash County." />
         </Helmet>
-        <Grid>
-          <hr/>
+        <Grid className="home">
           <Carousel className="home-carousel">
             <Carousel.Item>
               <img alt="carousel-1" src="assets/home/newborn.jpg" />

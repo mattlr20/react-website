@@ -1,28 +1,4 @@
-  .person-wrapper {
-      margin-bottom: 2em;
-  }
-
-  .profile-pic {
-      width: 50%;
-  }
-
-  .btn-primary {
-      background-image: none;
-      border: none;
-      border-radius: 0;
-      background-color: #2892D7;
-  }
-
-  h3 {
-      margin-bottom: 1em;
-  }
-
-  /* @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-  body {
-      font-family: 'Quicksand', sans-serif;
-  } */
-
-  /* Footer Style */
+ /* Footer Style */
 
   footer {
       font-family: 'Quicksand', sans-serif;
@@ -49,19 +25,11 @@
       color: #000000;
   }
 
-  /* .carousel-inner {
-      max-height: 420px;
-  } */
-
-  /* .carousel-inner img {
-      height: auto;
-      width: 100%;
-  } */
-
   .carousel {
     width: 100%;
 	padding-bottom: 36.843%;
-	position: relative;
+    position: relative;
+    border-top: solid 1px lightgrey;
   }
 
   .carousel-inner {
@@ -71,6 +39,10 @@
 	color: white;
 	font-size: 24px;
 	text-align: center
+  }
+
+  .carousel-inner img {
+    margin-top: 20px;
   }
 
   @media(min-width:768px) {
