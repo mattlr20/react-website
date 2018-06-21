@@ -16,13 +16,13 @@ export default class Home extends Component {
         <Grid className="home">
           <Carousel className="home-carousel">
             <Carousel.Item>
-              <img alt="carousel-1" src="assets/home/newborn.jpg" />
+              <img alt="carousel-1" src="assets/homecarousel/newborn.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="carousel-2" src="assets/home/musician.jpg" />
+              <img alt="carousel-2" src="assets/homecarousel/musician.jpg" />
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="carousel-3" src="assets/home/senior.jpg" />
+              <img alt="carousel-3" src="assets/homecarousel/senior.jpg" />
             </Carousel.Item>
           </Carousel>
           <hr/>
