@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Col, Carousel } from 'react-bootstrap';
+import { Grid, Row, Col, Carousel, Thumbnail, Button } from 'react-bootstrap';
 // import * as FontAwesome from 'react-icons/lib/fa'
 import {Helmet} from "react-helmet";
 import './Home.css';
@@ -10,7 +10,7 @@ export default class Home extends Component {
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>Hollister, NC Portraits &amp; Weddings Photography | KoAnn Photography</title>
+            <title>Portraits &amp; Weddings Photography Hollister, NC | KoAnn Photography</title>
             <meta name="description" content="Wedding and Portrait Photography in Hollister, NC, Halifax County and Nash County." />
         </Helmet>
         <Grid className="home">
@@ -26,6 +26,25 @@ export default class Home extends Component {
             </Carousel.Item>
           </Carousel>
           <hr/>
+        </Grid>
+        <Grid>
+          <Row>
+            <Col xs={12} sm={4}>
+              <Thumbnail href="/babies" src="assets/homeimagelinks/family2.jpg">
+                <h2>Newborns</h2>
+              </Thumbnail>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Thumbnail href="/graduates" src="assets/homeimagelinks/graduates1.jpg">
+                <h2>Graduates</h2>
+              </Thumbnail>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Thumbnail href="/engagement" src="assets/homeimagelinks/engagements1.jpg">
+                <h2>Engagements</h2>
+              </Thumbnail>
+            </Col>
+          </Row>
         </Grid>
         <Grid>
           <div className="home-about-wrap">
