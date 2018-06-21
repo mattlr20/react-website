@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col, Carousel, Thumbnail, Button } from 'react-bootstrap';
+import { Grid, Row, Col, Carousel, Thumbnail } from 'react-bootstrap';
 // import * as FontAwesome from 'react-icons/lib/fa'
 import {Helmet} from "react-helmet";
 import './Home.css';
