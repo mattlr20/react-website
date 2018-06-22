@@ -19,18 +19,9 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-            {routes.map((route) => (
-            <Route
-              key={route.path}
-              path={route.path}
-              render={(props) => <Gallery 
-                {...props} 
-                heading={route.heading} 
-                info={route.info} 
-                imgSrc={route.imgSrc} 
-                metaTitle={route.meta.title} 
-                metaDescription={route.meta.description} 
-              />}
+            {routes.map((route,key) => (
+            <Route key={route.path} path={route.path} render={() => 
+              <Gallery settings={routes[key]} />}
             />
             ))}
             <Redirect to="/" />
@@ -47,30 +38,50 @@ const routes = [
     path: '/babies',
     heading: 'Babies',
     info: 'Babies Portraits!',
-    imgSrc: 'babies',
+    imgPath: 'babies',
     meta: {
       title: 'Babies and Newborn Photography Hollister, NC | KoAnn Photography',
-      description: 'Babies and Newborn Photography in Hollister, NC, Halifax County and Nash County.'
+      description: 'Babies and Newborn Photography in Hollister, NC.'
     }
   },
   {
     path: '/engagement',
     heading: 'Engagement',
     info: 'Engagement Portraits!',
-    imgSrc: 'engagement',
+    imgPath: 'engagement',
     meta: {
       title: 'Engagement Photography Hollister, NC | KoAnn Photography',
-      description: 'Engagement Photography in Hollister, NC, Halifax County and Nash County.'
+      description: 'Engagement Photography in Hollister, NC.'
     }
   },
   {
     path: '/graduates',
     heading: 'Graduates',
     info: 'Graduate Portraits!',
-    imgSrc: 'graduates',
+    imgPath: 'graduates',
     meta: {
       title: 'Graduates and Seniors Photography Hollister, NC | KoAnn Photography',
-      description: 'Graduates and Seniors Photography in Hollister, NC, Halifax County and Nash County.'
+      description: 'Graduates and Seniors Photography in Hollister, NC.'
+    }
+  },
+  {
+    path: '/bellies',
+    heading: 'Bellies',
+    info: 'Bellies Portraits!',
+    imgPath: 'bellies',
+    meta: {
+      title: 'Bellies Photography Hollister, NC | KoAnn Photography',
+      description: 'Bellies Photography in Hollister, NC.'
+    }
+  },
+  {
+    path: '/families',
+    heading: 'Families',
+    info: 'Family Portraits!',
+    imgPath: 'families',
+    meta: {
+      title: 'Family Photography Hollister, NC | KoAnn Photography',
+      description: 'Family Photography in Hollister, NC.'
     }
   }
 ]

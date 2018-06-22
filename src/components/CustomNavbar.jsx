@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem, Image, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap/lib';
 import './CustomNavbar.css'
 
 export default class CustomNavbar extends Component {
@@ -18,19 +19,34 @@ export default class CustomNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} href="/">
-              Home
-            </NavItem>
+            <LinkContainer to="/">
+              <NavItem eventKey={1} >
+                Home
+              </NavItem>
+            </LinkContainer>
             <NavDropdown eventKey={2} title="Portrait" id="basic-nav-dropdown">
-              <MenuItem eventKey={2.1} href="/babies">Babies</MenuItem>
-              <MenuItem eventKey={2.2} href="/graduates">Graduates</MenuItem>
+              <LinkContainer to="/families">
+                <MenuItem eventKey={2.1}>Families</MenuItem>
+              </LinkContainer>
+              <LinkContainer to="/babies">
+                <MenuItem eventKey={2.2} >Babies</MenuItem>
+              </LinkContainer>
+              <LinkContainer to="/graduates">
+              <MenuItem eventKey={2.3} >Graduates</MenuItem>
+              </LinkContainer>
             </NavDropdown>
             <NavDropdown eventKey={3} title="Weddings" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1} href="/engagement">Engagement</MenuItem>
+              <LinkContainer to="/engagement">
+              <MenuItem eventKey={3.1} >Engagement</MenuItem>
+              </LinkContainer>
             </NavDropdown>
             <NavDropdown eventKey={4} title="Info" id="basic-nav-dropdown">
-              <MenuItem eventKey={4.1} href="/about">About Me</MenuItem>
-              <MenuItem eventKey={4.2} href="/contact">Contact</MenuItem>
+              <LinkContainer to="/about">
+              <MenuItem eventKey={4.1} >About Me</MenuItem>
+              </LinkContainer>
+              <LinkContainer to="/contact">
+              <MenuItem eventKey={4.2} >Contact</MenuItem>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
