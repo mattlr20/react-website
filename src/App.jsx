@@ -49,8 +49,8 @@ const routes = [
     info: 'Babies Portraits!',
     imgSrc: 'babies',
     meta: {
-      title: 'Babies & Newborn Photography Hollister, NC | KoAnn Photography',
-      description: 'Babies & Newborn Photography in Hollister, NC, Halifax County and Nash County.'
+      title: 'Babies and Newborn Photography Hollister, NC | KoAnn Photography',
+      description: 'Babies and Newborn Photography in Hollister, NC, Halifax County and Nash County.'
     }
   },
   {
