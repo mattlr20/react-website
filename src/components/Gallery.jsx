@@ -65,7 +65,7 @@ const images = {
   default: [
     {
       src: 'baby3.jpg',
-      alt: 'Babies Hollister, NC koAnn Photography 1'
+      alt: 'Babies Hollister, NC koAnn Photography one'
     },
     {
       src: 'engagement3.jpg',
